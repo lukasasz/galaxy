@@ -2,10 +2,6 @@ package Train;
 
 public class Main {
 
-	public Main() {
-		
-	}
-
 	public static void main(String[] args) {
 		Startup start = new Startup();
 		WaterSensor water_sensor = start.water_sensor;
@@ -28,8 +24,6 @@ public class Main {
 			operator.setSpeed(dashboard.readMaxSpeed());
 		}
 		start.signOut();
-		
-
 	}
 
 }
