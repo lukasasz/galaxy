@@ -92,7 +92,7 @@ public class IoT {
 	
 	//to log we use the log function from the admin
 	protected void log(String msg, Status new_status) {
-		Admin.log(session_id, msg, new_status);
+		Technician.log(session_id, msg, new_status);
 	}
 	
 

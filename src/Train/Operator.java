@@ -21,7 +21,7 @@ public class Operator extends IoT {
 	//overrides log to print operator along with the message
 	@Override
 	protected void log(String msg, Status new_status) {
-		Admin.log(session_id, "Operator: " + msg, new_status);
+		Technician.log(session_id, "Operator: " + msg, new_status);
 	}
 
 }

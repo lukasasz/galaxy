@@ -6,9 +6,9 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Admin {
+public class Technician {
 	/*
-	Admin class
+	Technician class
 	*/
 
 	//password for login
@@ -21,7 +21,7 @@ public class Admin {
 	protected static Status train_status;
 	
 	//constructor to set train_status to offline
-	Admin() {
+	Technician() {
 		train_status = Status.OFFLINE;
 	}
 	
@@ -64,12 +64,12 @@ public class Admin {
 		train_status = Status.OFFLINE;
 	}
 	
-	//creates the admin object and 
+	//creates the technician object
 	public static void main (String[] args) {
-		Admin admin = new Admin();
+		Technician technician = new Technician();
 		if (train_status == Status.DISABLED) {
-			// Admin must investigate
-			admin.enable();
+			// Technician must investigate
+			technician.enable();
 		}
 	}
 

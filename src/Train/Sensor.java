@@ -96,7 +96,7 @@ class TimeOfFlight implements Sensor {
 	//logs the current time_of_flight_data value
 	public String generate_log_msg() {
 		String log_msg = "Current time of flight sensor data: " +
-						 Integer.toString(camera_data);
+						 Integer.toString(time_of_flight_data);
 		return log_msg;
 	}
 }

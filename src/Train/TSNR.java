@@ -20,11 +20,11 @@ public class TSNR {
 	//reads the data from the sensors and logs the log message for the data
 	public void sendDataToAnalytics() {
 		latest_rainData = ws.readData();
-		Admin.log(session_id, ws.generate_log_msg(), Status.ONLINE);
+		Technician.log(session_id, ws.generate_log_msg(), Status.ONLINE);
 		latest_rpmData = rs.readData();
-		Admin.log(session_id, rs.generate_log_msg(), Status.ONLINE);
+		Technician.log(session_id, rs.generate_log_msg(), Status.ONLINE);
 		latest_cameraData = cs.readData();
-		Admin.log(session_id, cs.generate_log_msg(), Status.ONLINE);
+		Technician.log(session_id, cs.generate_log_msg(), Status.ONLINE);
 	}
 
 }

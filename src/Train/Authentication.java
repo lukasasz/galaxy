@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-public class Startup extends Admin {
+public class Authentication extends Technician {
 
 //	private 
 	protected long session_id;
@@ -12,10 +12,10 @@ public class Startup extends Admin {
 	protected RPMSensor rpm_sensor;
 	protected CameraSensor camera_sensor;
 	
-	//startup constructor calls the super constructor for Admin to set the train to OFFLINE status
+	//authentication constructor calls the super constructor for technician to set the train to OFFLINE status
 	//generates a session id for the train
 	//initializes each of the sensors
-	public Startup() {
+	public Authentication() {
 		super();
 		session_id = new Random().nextLong();
 		init();
@@ -28,7 +28,7 @@ public class Startup extends Admin {
 	private void init() {
 		signIn();
 		while (train_status == Status.DISABLED) {
-			// Await admin to approve status to change.
+			// Await technician to approve status to change.
 			continue;
 		}
 		if (train_status == Status.OFFLINE) {
@@ -37,7 +37,7 @@ public class Startup extends Admin {
 	}
 	
 	//takes in a password input for the system and allows the user to attempt signing in until they reach the max login attempts
-	//actively logs succesful logins and failures as well.
+	//actively logs successful logins and failures as well.
 	protected void signIn() {
 		Scanner scanner = new Scanner(System.in);
 		for (int i = 0; i < MAX_LOGIN_ATTEMPTS; i++) {
