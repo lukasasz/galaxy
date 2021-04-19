@@ -12,6 +12,9 @@ public class Startup extends Admin {
 	protected RPMSensor rpm_sensor;
 	protected CameraSensor camera_sensor;
 	
+	//startup constructor calls the super constructor for Admin to set the train to OFFLINE status
+	//generates a session id for the train
+	//initializes each of the sensors
 	public Startup() {
 		super();
 		session_id = new Random().nextLong();
@@ -21,6 +24,7 @@ public class Startup extends Admin {
 		camera_sensor = new CameraSensor();
 	}
 	
+	//attempts to sign in and calls itself until the train status is ONLINE
 	private void init() {
 		signIn();
 		while (train_status == Status.DISABLED) {
@@ -32,7 +36,8 @@ public class Startup extends Admin {
 		}
 	}
 	
-	
+	//takes in a password input for the system and allows the user to attempt signing in until they reach the max login attempts
+	//actively logs succesful logins and failures as well.
 	protected void signIn() {
 		Scanner scanner = new Scanner(System.in);
 		for (int i = 0; i < MAX_LOGIN_ATTEMPTS; i++) {
@@ -50,6 +55,7 @@ public class Startup extends Admin {
 		log(session_id, error_str, Status.DISABLED);
 	}
 	
+	//signs the user out and logs the sign out
 	protected void signOut() {
 		log(session_id, "Signing out.\n", Status.OFFLINE);
 	}

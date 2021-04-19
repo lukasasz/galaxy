@@ -1,5 +1,6 @@
 package Train;
 
+
 public class TSNR {
 
 	protected int latest_rainData, latest_rpmData, latest_cameraData;
@@ -8,6 +9,7 @@ public class TSNR {
 	private CameraSensor cs;
 	protected long session_id;
 	
+	//initializes the tsnr with all the sensor objects that are passed into the constructor along with setting the session id of the tsnr
 	public TSNR(WaterSensor water, RPMSensor rpm, CameraSensor camera, long session_id) {
 		ws = water;
 		rs = rpm;
@@ -15,6 +17,7 @@ public class TSNR {
 		this.session_id = session_id;
 	}
 	
+	//reads the data from the sensors and logs the log message for the data
 	public void sendDataToAnalytics() {
 		latest_rainData = ws.readData();
 		Admin.log(session_id, ws.generate_log_msg(), Status.ONLINE);

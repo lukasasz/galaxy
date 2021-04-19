@@ -1,5 +1,5 @@
 package Train;
-
+import java.util.concurrent.TimeUnit;
 public class Main {
 
 	public static void main(String[] args) {
@@ -12,6 +12,8 @@ public class Main {
 		IoT dashboard = new IoT(Analytics);
 		Operator operator = new Operator("John Smith", Analytics);
 		
+
+		//if the status of the train is online, we update the data and send the analytics to the dashboard every second
 		while (start.getStatus() == Status.ONLINE) {
 			/*  These should all work so that we need minimal actions like this here
 			 *    All alerts and changes to variables should be done internally.  
@@ -22,7 +24,10 @@ public class Main {
 			tsnr.sendDataToAnalytics();
 			Analytics.sendAnalyticsToDashboard();
 			operator.setSpeed(dashboard.readMaxSpeed());
+			TimeUnit.MINUTES.sleep(1);
 		}
+
+		//once the train goes online we sign out
 		start.signOut();
 	}
 
