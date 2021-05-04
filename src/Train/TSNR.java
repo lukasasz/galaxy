@@ -4,6 +4,7 @@ package Train;
 public class TSNR {
 
 	protected int latest_rainData, latest_rpmData, latest_cameraData;
+	protected CameraStatus latest_camerastatus;
 	private WaterSensor ws;
 	private RPMSensor rs;
 	private CameraSensor cs;
@@ -24,6 +25,7 @@ public class TSNR {
 		latest_rpmData = rs.readData();
 		Technician.log(session_id, rs.generate_log_msg(), Status.ONLINE);
 		latest_cameraData = cs.readData();
+		latest_camerastatus = cs.translate_data();
 		Technician.log(session_id, cs.generate_log_msg(), Status.ONLINE);
 	}
 
