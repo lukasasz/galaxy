@@ -41,10 +41,10 @@ public class Technician {
 			if (!log.exists()) {
 				log.createNewFile();	
 			}
-			FileWriter f = new FileWriter(file_name);
-			f.write(formatter.format(date));
-			f.write(Long.toString(session_id));
-			f.write(msg);
+			FileWriter f = new FileWriter(file_name, true);
+			f.write(formatter.format(date) + " Session ID: ");
+			f.write(Long.toString(session_id) + "\n");
+			f.write(msg + "\n");
 			f.close();
 			train_status = new_status;
 		}

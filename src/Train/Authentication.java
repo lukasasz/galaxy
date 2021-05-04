@@ -46,7 +46,7 @@ public class Authentication extends Technician {
 			if (verifyPassword(attempt)) {
 				log(session_id, "Successful login to IoT made.\n", Status.ONLINE);
 				scanner.close();
-				break;
+				return;
 			}
 		}
 		scanner.close();

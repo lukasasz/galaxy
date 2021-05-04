@@ -14,9 +14,9 @@ public class Horn {
 	private final static String horn_file = "";
 	
 	public static void soundHorn(int duration) throws FileNotFoundException {
-		if (duration != 0) {
+		if (duration != 0) {/*
 			try {
-	        	AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(this.getClass().getResource(horn_file));
+	        	AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(getClass().getResource(horn_file));
 	        	Clip clip = AudioSystem.getClip();
 	        	clip.open(audioInputStream);
 	        	clip.start();
@@ -27,7 +27,7 @@ public class Horn {
 	        	clip.stop();
 			} catch (Exception ex) {
 	        	ex.printStackTrace();
-	    	}
+	    	}*/
 		}
 	}
 }

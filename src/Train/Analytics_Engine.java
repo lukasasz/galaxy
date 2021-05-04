@@ -1,7 +1,12 @@
 package Train;
 
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Random;
+
+import org.json.simple.JSONObject;
 
 public class Analytics_Engine {
 
@@ -58,7 +63,7 @@ public class Analytics_Engine {
 			is_hazard_rain = true;
 			double calculated_max_speed = new Random().nextDouble() % 200.0;
 			String ALERT = "Hazardous rain conditions detected in Analytics Engine: " + 
-					Integer.toString(check) + "\nNew max speed: " + calculated_max_speed;
+					Integer.toString(check) + "\nNew max speed: " + calculated_max_speed + "\n";
 			alert = ALERT;
 			log(ALERT, Status.ONLINE);
 			setMaxSpeed(calculated_max_speed);
@@ -75,7 +80,7 @@ public class Analytics_Engine {
 			is_hazard_rpm = true;
 			double calculated_max_speed = new Random().nextDouble() % 200.0;
 			String ALERT = "Hazardous RPM conditions detected in Analytics Engine: " + 
-					Integer.toString(check) + "\nNew max speed: " + calculated_max_speed;
+					Integer.toString(check) + "\nNew max speed: " + calculated_max_speed + "\n";
 			alert = ALERT;
 			log(ALERT, Status.ONLINE);
 			setMaxSpeed(calculated_max_speed);
@@ -104,7 +109,7 @@ public class Analytics_Engine {
 				is_hazard_camera = true;
 				double calculated_max_speed = new Random().nextDouble() % 200.0;
 				String ALERT = "Hazardous camera conditions detected in Analytics Engine: " + 
-						Integer.toString(check) + "\nNew max speed: " + calculated_max_speed;
+						Integer.toString(check) + "\nNew max speed: " + calculated_max_speed + "\n";
 				alert = ALERT;
 				log(ALERT, Status.ONLINE);
 				setMaxSpeed(calculated_max_speed);
@@ -118,6 +123,34 @@ public class Analytics_Engine {
 		try {
 			Horn.soundHorn(horn_duration);
 		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		JSONObject jsonobj = new JSONObject();
+		jsonobj.put("water", is_hazard_rain);
+		jsonobj.put("rpm", is_hazard_rpm);
+		jsonobj.put("camera", is_hazard_camera);
+		jsonobj.put("horn_duration", horn_duration);
+		jsonobj.put("maxspeed", MAX_SPEED);
+		jsonobj.put("alert", this.alert);
+		File myObj = new File("output.json");
+		try {
+			if (myObj.createNewFile()) {
+//			    System.out.println("File created: " + myObj.getName());
+			} else {
+//				System.out.println("File already exists.");
+			}
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try {
+			FileWriter file = new FileWriter("output.json");
+         	file.write(jsonobj.toJSONString());
+         	file.close();
+		}
+	 	catch (IOException e) {
+		// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

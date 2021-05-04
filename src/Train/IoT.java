@@ -51,9 +51,6 @@ public class IoT {
 			log("Set train speed to " + Double.toString(speed) + ".\n", Status.ONLINE);
 			CURR_SPEED = speed;
 		}
-		else {
-			System.err.println("Speed is too high. Please check max speed.");
-		}
 	}
 	
 	//to render the rain data we process the rain data through the Analytics_Engine and print out the rain_data

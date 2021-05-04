@@ -1,0 +1,3 @@
+2021-05-04 at 17:42:44 EDT Session ID: 2988120568219888406
+Current camera sensor data: -1198973536
+

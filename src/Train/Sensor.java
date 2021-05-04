@@ -29,7 +29,7 @@ class WaterSensor implements Sensor {
 	//logs the current water_data value
 	public String generate_log_msg() {
 		String log_msg = "Current water sensor data: " +
-						 Integer.toString(water_data);
+						 Integer.toString(water_data) + "\n";
 		return log_msg;
 	}
 }
@@ -51,7 +51,7 @@ class RPMSensor implements Sensor {
 	//logs the current rpm_data value
 	public String generate_log_msg() {
 		String log_msg = "Current RPM sensor data: " +
-						 Integer.toString(rpm_data);
+						 Integer.toString(rpm_data) + "\n";
 		return log_msg;
 	}
 }
@@ -98,7 +98,7 @@ class CameraSensor implements Sensor {
 	//logs the current camera_data value
 	public String generate_log_msg() {
 		String log_msg = "Current camera sensor data: " +
-						 Integer.toString(camera_data);
+						 Integer.toString(camera_data) + "\n";
 		return log_msg;
 	}
 }
@@ -121,7 +121,7 @@ class TimeOfFlight implements Sensor {
 	//logs the current time_of_flight_data value
 	public String generate_log_msg() {
 		String log_msg = "Current time of flight sensor data: " +
-						 Integer.toString(time_of_flight_data);
+						 Integer.toString(time_of_flight_data) + "\n";
 		return log_msg;
 	}
 }
