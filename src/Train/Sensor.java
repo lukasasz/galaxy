@@ -56,13 +56,38 @@ class RPMSensor implements Sensor {
 	}
 }
 
+enum CameraStatus {
+	NO_CAMERA,
+	GATE_1_MILE,
+	GATE_CLOSE,
+	GATE_AND_HAZARD,
+	CAMERA_HAZARD
+}
+
 class CameraSensor implements Sensor {
+	
 	//data field that CameraSensor keeps track of
 	private int camera_data;
 	
 	//returns the camera_data
 	public int readData() {
 		return camera_data;
+	}
+	
+	public CameraStatus translate_data() {
+		if (camera_data == 1) {
+			return CameraStatus.GATE_1_MILE;
+		}
+		else if (camera_data == 2) {
+			return CameraStatus.GATE_CLOSE;
+		}
+		else if (camera_data == 3) {
+			return CameraStatus.GATE_AND_HAZARD;
+		}
+		else if (camera_data == 4) {
+			return CameraStatus.CAMERA_HAZARD;
+		}
+		return CameraStatus.NO_CAMERA;
 	}
 	
 	//collects next data point

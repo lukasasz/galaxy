@@ -1,5 +1,6 @@
 package Train;
 
+import java.io.FileNotFoundException;
 import java.util.Random;
 
 public class Analytics_Engine {
@@ -11,6 +12,7 @@ public class Analytics_Engine {
 	Boolean is_hazard_rain = false;
 	Boolean is_hazard_rpm = false;
 	Boolean is_hazard_camera = false;
+	int horn_duration = 0;
 	String alert;
 	
 
@@ -34,6 +36,10 @@ public class Analytics_Engine {
 	//processes the latest camera data
 	protected int processCameraData() {
 		return tsnr.latest_cameraData;
+	}
+	
+	protected CameraStatus processCameraDetection() {
+		return tsnr.latest_camerastatus;
 	}
 	
 	//sets the max speed to the new_max_speed
@@ -81,20 +87,38 @@ public class Analytics_Engine {
 		}
 		
 		check = processCameraData();
-		if (check < 10) {
+		if (check != 0) {
 			//if the camera_data value is less than 10 then there is a camera hazard so we set the alert to the appropriate hazard message and 
 			//suggests the new max speed
-			is_hazard_camera = true;
-			double calculated_max_speed = new Random().nextDouble() % 200.0;
-			String ALERT = "Hazardous camera conditions detected in Analytics Engine: " + 
-					Integer.toString(check) + "\nNew max speed: " + calculated_max_speed;
-			alert = ALERT;
-			log(ALERT, Status.ONLINE);
-			setMaxSpeed(calculated_max_speed);
+			CameraStatus curr_status = processCameraDetection();
+			if (curr_status == CameraStatus.GATE_CLOSE) { // < 0.01 mile
+				horn_duration = 5;
+			}
+			else if (curr_status == CameraStatus.GATE_1_MILE) {
+				horn_duration = 15;
+			}
+			else if (curr_status == CameraStatus.GATE_AND_HAZARD || curr_status == CameraStatus.CAMERA_HAZARD) {
+				if (curr_status == CameraStatus.GATE_AND_HAZARD) {
+					horn_duration = 15;
+				}
+				is_hazard_camera = true;
+				double calculated_max_speed = new Random().nextDouble() % 200.0;
+				String ALERT = "Hazardous camera conditions detected in Analytics Engine: " + 
+						Integer.toString(check) + "\nNew max speed: " + calculated_max_speed;
+				alert = ALERT;
+				log(ALERT, Status.ONLINE);
+				setMaxSpeed(calculated_max_speed);
+			}
 		} else {
 			//if there is no camera hazard we set is_camera_hazard to false and reset the max speed to 200 if there are currently no other hazards detected
+			horn_duration = 0;
 			is_hazard_camera = false;
 			if (!is_hazard_rpm && !is_hazard_rain) setMaxSpeed(200.0);
+		}
+		try {
+			Horn.soundHorn(horn_duration);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		}
 	}
 	
