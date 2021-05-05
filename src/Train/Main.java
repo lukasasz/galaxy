@@ -27,7 +27,7 @@ public class Main {
 			Analytics.sendAnalyticsToDashboard();
 			operator.setSpeed(dashboard.readMaxSpeed());
 			try {
-				TimeUnit.SECONDS.sleep(1);
+				TimeUnit.SECONDS.sleep(6);
 			} catch (InterruptedException e) {
 				// internal error, but train will keep moving with previous data.
 				continue;

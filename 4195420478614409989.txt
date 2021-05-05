@@ -1,0 +1,153 @@
+2021-05-05 at 13:56:45 EDT Session ID: 4195420478614409989
+Successful login to IoT made.
+
+2021-05-05 at 13:56:45 EDT Session ID: 4195420478614409989
+Current water sensor data: 29
+
+2021-05-05 at 13:56:45 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 2
+
+2021-05-05 at 13:56:45 EDT Session ID: 4195420478614409989
+Current camera sensor data: 0
+
+2021-05-05 at 13:56:51 EDT Session ID: 4195420478614409989
+Current water sensor data: 82
+
+2021-05-05 at 13:56:51 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 62
+
+2021-05-05 at 13:56:51 EDT Session ID: 4195420478614409989
+Current camera sensor data: 7
+
+2021-05-05 at 13:56:57 EDT Session ID: 4195420478614409989
+Current water sensor data: 98
+
+2021-05-05 at 13:56:57 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 48
+
+2021-05-05 at 13:56:57 EDT Session ID: 4195420478614409989
+Current camera sensor data: 3
+
+2021-05-05 at 13:56:57 EDT Session ID: 4195420478614409989
+Hazardous rain conditions detected in Analytics Engine: 98
+New max speed: 30.80112564587707
+
+2021-05-05 at 13:56:57 EDT Session ID: 4195420478614409989
+Hazardous camera conditions detected in Analytics Engine: 3
+New max speed: 30.659913399368595
+
+2021-05-05 at 13:57:03 EDT Session ID: 4195420478614409989
+Current water sensor data: 83
+
+2021-05-05 at 13:57:03 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 41
+
+2021-05-05 at 13:57:03 EDT Session ID: 4195420478614409989
+Current camera sensor data: 7
+
+2021-05-05 at 13:57:09 EDT Session ID: 4195420478614409989
+Current water sensor data: 27
+
+2021-05-05 at 13:57:09 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 68
+
+2021-05-05 at 13:57:09 EDT Session ID: 4195420478614409989
+Current camera sensor data: 4
+
+2021-05-05 at 13:57:09 EDT Session ID: 4195420478614409989
+Hazardous camera conditions detected in Analytics Engine: 4
+New max speed: 30.494156913851235
+
+2021-05-05 at 13:57:15 EDT Session ID: 4195420478614409989
+Current water sensor data: 7
+
+2021-05-05 at 13:57:15 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 6
+
+2021-05-05 at 13:57:15 EDT Session ID: 4195420478614409989
+Current camera sensor data: 1
+
+2021-05-05 at 13:57:21 EDT Session ID: 4195420478614409989
+Current water sensor data: 28
+
+2021-05-05 at 13:57:21 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 89
+
+2021-05-05 at 13:57:21 EDT Session ID: 4195420478614409989
+Current camera sensor data: 7
+
+2021-05-05 at 13:57:27 EDT Session ID: 4195420478614409989
+Current water sensor data: 2
+
+2021-05-05 at 13:57:27 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 49
+
+2021-05-05 at 13:57:27 EDT Session ID: 4195420478614409989
+Current camera sensor data: 6
+
+2021-05-05 at 13:57:33 EDT Session ID: 4195420478614409989
+Current water sensor data: 6
+
+2021-05-05 at 13:57:33 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 79
+
+2021-05-05 at 13:57:33 EDT Session ID: 4195420478614409989
+Current camera sensor data: 3
+
+2021-05-05 at 13:57:33 EDT Session ID: 4195420478614409989
+Hazardous camera conditions detected in Analytics Engine: 3
+New max speed: 30.977504239846116
+
+2021-05-05 at 13:57:39 EDT Session ID: 4195420478614409989
+Current water sensor data: 72
+
+2021-05-05 at 13:57:39 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 44
+
+2021-05-05 at 13:57:39 EDT Session ID: 4195420478614409989
+Current camera sensor data: 9
+
+2021-05-05 at 13:57:45 EDT Session ID: 4195420478614409989
+Current water sensor data: 57
+
+2021-05-05 at 13:57:45 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 43
+
+2021-05-05 at 13:57:45 EDT Session ID: 4195420478614409989
+Current camera sensor data: 1
+
+2021-05-05 at 13:57:51 EDT Session ID: 4195420478614409989
+Current water sensor data: 2
+
+2021-05-05 at 13:57:51 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 71
+
+2021-05-05 at 13:57:51 EDT Session ID: 4195420478614409989
+Current camera sensor data: 3
+
+2021-05-05 at 13:57:51 EDT Session ID: 4195420478614409989
+Hazardous camera conditions detected in Analytics Engine: 3
+New max speed: 30.300406423404798
+
+2021-05-05 at 13:57:57 EDT Session ID: 4195420478614409989
+Current water sensor data: 39
+
+2021-05-05 at 13:57:57 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 97
+
+2021-05-05 at 13:57:57 EDT Session ID: 4195420478614409989
+Current camera sensor data: 5
+
+2021-05-05 at 13:57:57 EDT Session ID: 4195420478614409989
+Hazardous RPM conditions detected in Analytics Engine: 97
+New max speed: 30.261966474476736
+
+2021-05-05 at 13:58:03 EDT Session ID: 4195420478614409989
+Current water sensor data: 81
+
+2021-05-05 at 13:58:03 EDT Session ID: 4195420478614409989
+Current RPM sensor data: 44
+
+2021-05-05 at 13:58:03 EDT Session ID: 4195420478614409989
+Current camera sensor data: 2
+

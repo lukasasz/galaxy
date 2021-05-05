@@ -23,7 +23,7 @@ class WaterSensor implements Sensor {
 	
 	//collects next data point
 	public void sendDataToTSNR() {
-		water_data = new Random().nextInt(); // Sensors arbitrarily collect data
+		water_data = Math.abs(new Random().nextInt()) % 100; // Sensors arbitrarily collect data
 	}
 	
 	//logs the current water_data value
@@ -45,7 +45,7 @@ class RPMSensor implements Sensor {
 
 	//collects next data point
 	public void sendDataToTSNR() {
-		rpm_data = new Random().nextInt();
+		rpm_data = Math.abs(new Random().nextInt()) % 100;
 	}
 	
 	//logs the current rpm_data value
@@ -92,7 +92,7 @@ class CameraSensor implements Sensor {
 	
 	//collects next data point
 	public void sendDataToTSNR() {
-		camera_data = new Random().nextInt();
+		camera_data = Math.abs(new Random().nextInt()) % 10;
 	}
 	
 	//logs the current camera_data value
@@ -115,7 +115,7 @@ class TimeOfFlight implements Sensor {
 	
 	//collects next data point
 	public void sendDataToTSNR() {
-		time_of_flight_data = new Random().nextInt();
+		time_of_flight_data = Math.abs(new Random().nextInt()) % 100;
 	}
 	
 	//logs the current time_of_flight_data value

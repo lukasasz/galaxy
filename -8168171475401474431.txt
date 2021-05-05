@@ -1,0 +1,12 @@
+2021-05-05 at 13:55:58 EDT Session ID: -8168171475401474431
+Successful login to IoT made.
+
+2021-05-05 at 13:55:58 EDT Session ID: -8168171475401474431
+Current water sensor data: 16
+
+2021-05-05 at 13:55:58 EDT Session ID: -8168171475401474431
+Current RPM sensor data: 90
+
+2021-05-05 at 13:55:58 EDT Session ID: -8168171475401474431
+Current camera sensor data: 6
+

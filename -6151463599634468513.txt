@@ -1,0 +1,141 @@
+2021-05-05 at 14:02:25 EDT Session ID: -6151463599634468513
+Successful login to IoT made.
+
+2021-05-05 at 14:02:25 EDT Session ID: -6151463599634468513
+Current water sensor data: 34
+
+2021-05-05 at 14:02:25 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 55
+
+2021-05-05 at 14:02:25 EDT Session ID: -6151463599634468513
+Current camera sensor data: 1
+
+2021-05-05 at 14:02:31 EDT Session ID: -6151463599634468513
+Current water sensor data: 47
+
+2021-05-05 at 14:02:31 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 71
+
+2021-05-05 at 14:02:31 EDT Session ID: -6151463599634468513
+Current camera sensor data: 7
+
+2021-05-05 at 14:02:37 EDT Session ID: -6151463599634468513
+Current water sensor data: 35
+
+2021-05-05 at 14:02:37 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 47
+
+2021-05-05 at 14:02:37 EDT Session ID: -6151463599634468513
+Current camera sensor data: 1
+
+2021-05-05 at 14:02:43 EDT Session ID: -6151463599634468513
+Current water sensor data: 81
+
+2021-05-05 at 14:02:43 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 75
+
+2021-05-05 at 14:02:43 EDT Session ID: -6151463599634468513
+Current camera sensor data: 5
+
+2021-05-05 at 14:02:49 EDT Session ID: -6151463599634468513
+Current water sensor data: 45
+
+2021-05-05 at 14:02:49 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 0
+
+2021-05-05 at 14:02:49 EDT Session ID: -6151463599634468513
+Current camera sensor data: 6
+
+2021-05-05 at 14:02:55 EDT Session ID: -6151463599634468513
+Current water sensor data: 91
+
+2021-05-05 at 14:02:55 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 41
+
+2021-05-05 at 14:02:55 EDT Session ID: -6151463599634468513
+Current camera sensor data: 3
+
+2021-05-05 at 14:02:55 EDT Session ID: -6151463599634468513
+Hazardous camera conditions detected in Analytics Engine: 3
+New max speed: 30.296608373696944
+
+2021-05-05 at 14:03:01 EDT Session ID: -6151463599634468513
+Current water sensor data: 53
+
+2021-05-05 at 14:03:01 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 37
+
+2021-05-05 at 14:03:01 EDT Session ID: -6151463599634468513
+Current camera sensor data: 7
+
+2021-05-05 at 14:03:07 EDT Session ID: -6151463599634468513
+Current water sensor data: 93
+
+2021-05-05 at 14:03:07 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 95
+
+2021-05-05 at 14:03:07 EDT Session ID: -6151463599634468513
+Current camera sensor data: 3
+
+2021-05-05 at 14:03:07 EDT Session ID: -6151463599634468513
+Hazardous camera conditions detected in Analytics Engine: 3
+New max speed: 30.43711668763794
+
+2021-05-05 at 14:03:13 EDT Session ID: -6151463599634468513
+Current water sensor data: 76
+
+2021-05-05 at 14:03:13 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 70
+
+2021-05-05 at 14:03:13 EDT Session ID: -6151463599634468513
+Current camera sensor data: 4
+
+2021-05-05 at 14:03:13 EDT Session ID: -6151463599634468513
+Hazardous camera conditions detected in Analytics Engine: 4
+New max speed: 30.33559989997661
+
+2021-05-05 at 14:03:19 EDT Session ID: -6151463599634468513
+Current water sensor data: 62
+
+2021-05-05 at 14:03:19 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 41
+
+2021-05-05 at 14:03:19 EDT Session ID: -6151463599634468513
+Current camera sensor data: 6
+
+2021-05-05 at 14:03:25 EDT Session ID: -6151463599634468513
+Current water sensor data: 69
+
+2021-05-05 at 14:03:25 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 78
+
+2021-05-05 at 14:03:25 EDT Session ID: -6151463599634468513
+Current camera sensor data: 1
+
+2021-05-05 at 14:03:31 EDT Session ID: -6151463599634468513
+Current water sensor data: 49
+
+2021-05-05 at 14:03:31 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 76
+
+2021-05-05 at 14:03:31 EDT Session ID: -6151463599634468513
+Current camera sensor data: 2
+
+2021-05-05 at 14:03:37 EDT Session ID: -6151463599634468513
+Current water sensor data: 3
+
+2021-05-05 at 14:03:37 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 11
+
+2021-05-05 at 14:03:37 EDT Session ID: -6151463599634468513
+Current camera sensor data: 0
+
+2021-05-05 at 14:03:43 EDT Session ID: -6151463599634468513
+Current water sensor data: 85
+
+2021-05-05 at 14:03:43 EDT Session ID: -6151463599634468513
+Current RPM sensor data: 95
+
+2021-05-05 at 14:03:43 EDT Session ID: -6151463599634468513
+Current camera sensor data: 5
+

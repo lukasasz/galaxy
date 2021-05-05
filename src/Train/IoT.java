@@ -4,8 +4,8 @@ public class IoT {
 	
 	private Analytics_Engine Analytics;
 	protected long session_id;
-	private static double MAX_SPEED;
-	private static double CURR_SPEED;
+	private final static double MAX_SPEED = 60.0;
+	private static double CURR_MAX_SPEED;
 	private Boolean is_hazard_rain, is_hazard_rpm, is_hazard_camera;
 	private String alert;
 
@@ -13,7 +13,6 @@ public class IoT {
 	//check to see if there is a hazard to begin with and display alert if so
 	public IoT(Analytics_Engine Analytics) {
 		session_id = Analytics.session_id;
-		MAX_SPEED = Analytics.MAX_SPEED;
 		is_hazard_rain = Analytics.is_hazard_rain;
 		is_hazard_rpm = Analytics.is_hazard_rpm;
 		is_hazard_camera = Analytics.is_hazard_camera;
@@ -21,7 +20,7 @@ public class IoT {
 		if (is_hazard_rain || is_hazard_rpm || is_hazard_camera) {
 			displayAlert();
 		}
-		CURR_SPEED = MAX_SPEED;
+		CURR_MAX_SPEED = MAX_SPEED;
 	}
 	
 	//returns if there is hazard rain
@@ -41,7 +40,7 @@ public class IoT {
 	
 	//returns the max safe speed the train should go
 	public double readMaxSpeed() {
-		return MAX_SPEED;
+		return CURR_MAX_SPEED;
 	}
 	
 	//sets the max safe speed the train should go
@@ -49,7 +48,7 @@ public class IoT {
 	protected void setSpeed(double speed) {
 		if (speed < MAX_SPEED) {
 			log("Set train speed to " + Double.toString(speed) + ".\n", Status.ONLINE);
-			CURR_SPEED = speed;
+			CURR_MAX_SPEED = speed;
 		}
 	}
 	
@@ -73,7 +72,7 @@ public class IoT {
 	
 	//to render the speed data we print out the current speed and the maximum speed
 	public void renderSpeed() {
-		System.out.println("Current speed is " + Double.toString(CURR_SPEED));
+		System.out.println("Current speed is " + Double.toString(CURR_MAX_SPEED));
 		System.out.println("Maximum speed is " + Double.toString(MAX_SPEED));
 	}
 	

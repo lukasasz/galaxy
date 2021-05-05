@@ -1,1 +1,1 @@
-{"horn_duration":0,"alert":"Hazardous RPM conditions detected in Analytics Engine: 517027284\nNew max speed: 0.8522350285697462\n","maxspeed":0.8522350285697462,"camera":false,"water":false,"rpm":true}
+{"alerts":[],"horn_duration":5,"maxspeed":30.33559989997661,"gate":true,"camera":true,"water":false,"rpm":false}
